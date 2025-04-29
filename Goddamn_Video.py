@@ -12,7 +12,8 @@ if 'seach' not in st.session_state:
 
 # st.sidebar.write("动漫梦工厂")
 st.title("Goddamn Video")
-st.write("<看视频，用超简洁的Goddamn Video\n\n出自千海之手>")
+st.write("<看视频，用超简洁的Goddamn Video>")
+st.write("<出自千海之手>")
 videoName=st.text_input("输入影视名称",key='search')
 
 if st.button("搜索"):
