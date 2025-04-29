@@ -49,7 +49,10 @@ if st.session_state.seach:
                 li_list.append(header+li_url.get('href'))
 
             st.write(f"共{len(li_list)}集")
-            input_num=st.text_input('选集：',key=f'key{num}')
+            if len(li_list)!=1:
+                input_num=st.text_input('选集：',key=f'key{num}')
+            else:
+                input_num=1
 
             if st.button('获取',key=f'input_key{num}'):
                 input_url = li_list[int(input_num) - 1]
