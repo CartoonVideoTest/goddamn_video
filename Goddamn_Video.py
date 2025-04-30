@@ -12,9 +12,12 @@ if 'seach' not in st.session_state:
 
 with st.sidebar:
     st.title("Goddamn Video")
-    st.write("<看视频，用超简洁的Goddamn Video>")
+    # st.write("<看视频，用超简洁的Goddamn Video>")
     st.write("<温馨提示：别TM的相信视频内的广告，小心骗得你裤衩子都不剩>")
     videoName=st.text_input("输入影视名称",key='search')
+
+    st.write("---")
+    st.write('如有侵权，可联系邮件\n\n<gytc163@163.com>')
     
     if st.button("搜索"):
         st.session_state.seach = True
@@ -75,5 +78,3 @@ if st.session_state.seach:
 
         num+=1
 
-
-st.write('如有侵权，可联系邮件\n\n<gytc163@163.com>')
