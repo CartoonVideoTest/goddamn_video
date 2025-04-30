@@ -22,7 +22,7 @@ with st.sidebar:
         st.session_state.seach = True
 
 st.write("---")
-st.write("温馨提示：\n\n请勿相信视频内的广告，小心骗得你裤衩子都不>")
+st.write("温馨提示：\n\n请勿相信视频内的广告，小心骗得你裤衩子都不")
 
 if st.session_state.seach:
 
