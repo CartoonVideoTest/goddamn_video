@@ -3,6 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import streamlit as st
 
+st.set_page_config(
+    page_title="Goddamn Video",  # 这里设置你想要的标题名称
+    page_icon=":smile:",
+    layout="centered",
+    initial_sidebar_state="auto",
+)
+
 header = 'https://www.tv121.com/'
 header1 = 'https://www.tv121.com/static/js/player.html?url='
 
