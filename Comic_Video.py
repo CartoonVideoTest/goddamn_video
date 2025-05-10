@@ -8,12 +8,13 @@ from selenium.webdriver.edge.options import Options
 
 def detail(url):
     # 配置无头模式
-    edge_options = Options()
-    edge_options.add_argument("--headless")  # 新版Edge推荐使用--headless=new
-    #edge_options.add_argument("--disable-gpu")  # 在无头模式下禁用GPU加速
+    options = Options()
+    options.add_argument("--headless")  # 无头模式
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
 
-    # 创建Edge浏览器驱动
-    driver = webdriver.Edge(options=edge_options)
+    # 初始化 Chrome 浏览器（GitHub Actions 默认支持 Chrome）
+    driver = webdriver.Edge(options=options)
     driver.implicitly_wait(10)
 
     # 使用示例
