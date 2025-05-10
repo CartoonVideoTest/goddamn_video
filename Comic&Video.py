@@ -9,8 +9,8 @@ from selenium.webdriver.edge.options import Options
 def detail(url):
     # 配置无头模式
     edge_options = Options()
-    edge_options.add_argument("--headless=new")  # 新版Edge推荐使用--headless=new
-    edge_options.add_argument("--disable-gpu")  # 在无头模式下禁用GPU加速
+    edge_options.add_argument("--headless")  # 新版Edge推荐使用--headless=new
+    #edge_options.add_argument("--disable-gpu")  # 在无头模式下禁用GPU加速
 
     # 创建Edge浏览器驱动
     driver = webdriver.Edge(options=edge_options)
