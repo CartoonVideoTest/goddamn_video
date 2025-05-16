@@ -89,18 +89,18 @@ with st.sidebar:
 
 if select_type == '漫画':
     if select_option == "斗破苍穹":
-        st.write('待定……')
-        # if num_input != '':
-        #     if num_input.isdigit():
-        #         if int(num_input) <= 20:
-        #             if st.session_state.search:
-        #                 detail(manhua(select_option)[int(num_input)-1])
-        #         else:
-        #             st.write('艾玛！后20话！只有20话！！！')
-        #     else:
-        #         st.write('输入非负整数，就是0，1，2，3，4……')
-        # else:
-        #     st.write('这是一个广告位，但没广告^_^')
+        #st.write('待定……')
+        if num_input != '':
+            if num_input.isdigit():
+                if int(num_input) <= 20:
+                    if st.session_state.search:
+                        detail(manhua(select_option)[int(num_input)-1])
+                else:
+                    st.write('艾玛！后20话！只有20话！！！')
+            else:
+                st.write('输入非负整数，就是0，1，2，3，4……')
+        else:
+            st.write('这是一个广告位，但没广告^_^')
 
     elif select_option == "逆天邪神":
         st.write('待定……')
